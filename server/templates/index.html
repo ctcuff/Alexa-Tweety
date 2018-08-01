@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<script type="text/javascript">
+    function updateTitle(s) {
+        document.title = s;
+    }
+</script>
+<style>
+    p {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+</style>
+{% block body %}
+    <h2>Alexa-Tweety</h2>
+    {% if session['screen_name'] %}
+        <script> updateTitle(`Welcome {{session['screen_name']}}`) </script>
+        <p>
+            Hello {{ session['screen_name'] }}!<br><br>
+            <a href="{{ url_for('logout') }}">
+                <b>Logout</b>
+            </a>
+        </p>
+    {% else %}
+        <p>
+            Sign in with twitter.
+        <p>
+        <a href="{{ url_for('login') }}">
+            <img src="{{ url_for('static', filename='sign-in.png') }}" alt="sign in" width="20%" height="20%"/>
+        </a>
+    {% endif %}
+{% endblock %}
+</html>

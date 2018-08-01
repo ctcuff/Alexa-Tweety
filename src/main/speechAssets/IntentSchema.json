@@ -1,0 +1,80 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tweety",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "say hello",
+            "say hello world",
+            "hello",
+            "say hi",
+            "say hi world",
+            "hi",
+            "how are you"
+          ]
+        },
+        {
+          "name": "UpdateStatusIntent",
+          "slots": [
+            {
+              "name": "status",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "to update my status to {status}",
+            "update my status to {status}"
+          ]
+        },
+        {
+          "name": "DirectMessageIntent",
+          "slots": [],
+          "samples": [
+            "read my latest message",
+            "read my last message",
+            "to read my last message",
+            "get my last message",
+            "read my messages"
+          ]
+        },
+        {
+          "name": "DirectMessageCountIntent",
+          "slots": [],
+          "samples":[
+            "how many messages do i have",
+            "what's my message count",
+            "what is my message count"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}
