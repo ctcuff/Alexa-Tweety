@@ -25,7 +25,7 @@ praw==5.4.0
 prawcore==0.14.0
 python-dateutil==2.7.0
 pytz==2018.3
-requests==2.18.4
+requests==2.20.0
 requests-oauthlib==0.8.0
 scribd-downloader==0.1.5
 selenium==3.8.1
