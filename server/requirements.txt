@@ -32,7 +32,7 @@ selenium==3.8.1
 six==1.11.0
 tweepy==3.5.0
 update-checker==0.16
-urllib3==1.22
+urllib3==1.23
 virtualenv==16.0.0
 virtualenv-clone==0.3.0
 Werkzeug==0.14.1
